@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17E444722CBB26600067E62D /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 17E444712CBB26600067E62D /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		17E444552CBB25E50067E62D /* Nav4Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nav4Mate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E444722CBB26600067E62D /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 			);
 			name = Nav4Mate;
 			packageProductDependencies = (
+				17E444712CBB26600067E62D /* SwiftSoup */,
 			);
 			productName = Nav4Mate;
 			productReference = 17E444552CBB25E50067E62D /* Nav4Mate.app */;
@@ -121,6 +127,9 @@
 			);
 			mainGroup = 17E4444C2CBB25E50067E62D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				17E444702CBB26600067E62D /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 17E444562CBB25E50067E62D /* Products */;
 			projectDirPath = "";
@@ -349,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17E444702CBB26600067E62D /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17E444712CBB26600067E62D /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17E444702CBB26600067E62D /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17E4444D2CBB25E50067E62D /* Project object */;
 }
